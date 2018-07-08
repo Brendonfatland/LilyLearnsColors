@@ -1,5 +1,5 @@
-#rainbow {
-    
+#NavRainbow {
+
     background: red; /* For browsers that do not support gradients */
     background: linear-gradient(to bottom right, red,blue, yellow); /* Standard syntax (must be last) */
 }

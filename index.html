@@ -9,61 +9,61 @@
 <link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="app.js"></script>
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 /* Set the width of the sidebar to 200px */
-.w3-sidebar {width: 200px;background: #222;}
+/*.w3-sidebar {width: 200px;background: #222;}
 /* Add a left margin to the "page content" that matches the width of the sidebar (200px) */
-#main {margin-left: 200px}
+/*#main {margin-left: 200px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
 <body class="w3-grey">
 
+
+<div class="w3-row">
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center ">
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-col m2">
   <!-- Avatar image in top left corner -->
   <img src="elmo.jpg" style="width:100%">
 
-  <a href="#Orange" class=" w3-bar-item w3-margin w3-hover-black w3-button">
-
-    <p class="w3-orange w3-large">Orange</p>
+  <a href="#Orange" class=" w3-bar-item w3-hover-black w3-button tablinks" id="NOrange" onclick="openColor('Orange')">
+<p class="w3-orange w3-large">Orange</p>
   </a>
-  <a href="#Red" class="w3-bar-item w3-margin w3-button  w3-hover-black">
 
-    <p class="w3-red w3-large">Red</p>
+<a href="#Red" class="w3-bar-item w3-margin w3-button  w3-hover-black tablinks" id="NRed" onclick="openColor('Red')">
+<p class="w3-red w3-large">Red</p>
+</a>
+
+  <a href="#Yellow" class="w3-bar-item w3-margin w3-button  w3-hover-black tablinks" id="NYellow" onclick="openColor('Yellow')">
+<p class="w3-yellow w3-large">Yellow</p>
   </a>
-  <a href="#Yellow" class="w3-bar-item w3-margin w3-button  w3-hover-black">
 
-    <p class="w3-yellow w3-large">Yellow</p>
+  <a href="#Black" class="w3-bar-item w3-margin w3-button  w3-hover-black tablinks" id="NBlack" onclick="openColor('Black')">
+<p class="w3-black w3-large">Black</p>
+  </a>
+
+    <a href="#Brown" class="w3-bar-item w3-margin w3-button  w3-hover-black tablinks" id="NBrown" onclick="openColor('Brown')">
+<p class="w3-brown w3-large">Brown</p>
     </a>
-    <a href="#Black" class="w3-bar-item w3-margin w3-button  w3-hover-black">
 
-      <p class="w3-black w3-large">Black</p>
+    <a href="#Blue" class="w3-bar-item w3-margin w3-button  w3-hover-black tablinks" id="NBlue" onclick="openColor('Blue')">
+<p class="w3-blue w3-large">Blue</p>
     </a>
-    <a href="#Brown" class="w3-bar-item w3-margin w3-button  w3-hover-black">
 
-      <p class="w3-brown w3-large">Brown</p>
+    <a href="#Green " class="w3-bar-item w3-margin w3-button  w3-hover-black tablinks" id="NGreen" onclick="openColor('Green')">
+<p class="w3-green w3-large">Green</p>
     </a>
-    <a href="#Blue" class="w3-bar-item w3-margin w3-button  w3-hover-black">
 
-      <p class="w3-blue w3-large">Blue</p>
+    <a href="#Purple" class="w3-bar-item w3-margin w3-button  w3-hover-black tablinks" id="NPurple" onclick="openColor('Purple')">
+<p class="w3-purple w3-large">Purple</p>
     </a>
-    <a href="#Green " class="w3-bar-item w3-margin w3-button  w3-hover-black">
 
-      <p class="w3-green w3-large">Green</p>
-    </a>
-    <a href="#Purple" class="w3-bar-item w3-margin w3-button  w3-hover-black">
-
-      <p class="w3-purple w3-large">Purple</p>
-    </a>
-    <a href="#Rainbow" class="w3-bar-item w3-margin w3-button w3-padding-16 w3-hover-black">
-
-      <p class="w3-large" id="rainbow">Rainbow
-
-      </p>
+    <a href="#Rainbow" class="w3-bar-item w3-margin w3-button w3-padding-16 w3-hover-black tablinks" id="NRainbow" onclick="openColor('Rainbow')">
+<p class="w3-large" id="NavRainbow">Rainbow</p>
     </a>
 
 </nav>
@@ -84,45 +84,71 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
 </div>
 
+
 <!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> John Doe.</h1>
-    <p>Photographer and Web Designer.</p>
+<div class="w3-padding-large w3-col id="main" style="width:75%">
+  <header class=" w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Lily Learns Colors</span></h1>
+    <p>I love you Lily! Please always enjoy this!</p>
     <img src="" alt="boy" class="w3-image" width="992" height="1108">
   </header>
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">My Name</h2>
+<!-- Elmo Section -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-64 color " id="Elmo" style="display:none">
+<h2 class="w3-text-light-grey">Elmo</h2>
+</div>
 
-    </div>
+<!-- Red Section -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-64 color" id="Red" style="display:none">
+<h2 class="w3-text-light-grey">Red</h2>
+</div>
 
+<!-- Orange Section -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-64 color" id="Orange" style="display:none">
+<h2 class="w3-text-light-grey">Orange</h2>
+</div>
 
+<!-- Yellow Section -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-64 color" id="Yellow" style="display:none">
+<h2 class="w3-text-light-grey">Yellow</h2>
+</div>
 
+<!-- Black Section -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-64 color" id="Black" style="display:none">
+<h2 class="w3-text-light-grey">Black</h2>
+</div>
 
+<!-- Brown Section -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-64 color" id="Brown" style="display:none">
+<h2 class="w3-text-light-grey">Brown</h2>
+</div>
+
+<!-- Blue Section -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-64 color" id="Blue" style="display:none">
+<h2 class="w3-text-light-grey">Blue</h2>
+</div>
+
+<!-- Green Section -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-64 color" id="Green" style="display:none">
+<h2 class="w3-text-light-grey">Green</h2>
+</div>
+
+<!-- Purple Section -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-64 color" id="Purple" style="display:none">
+<h2 class="w3-text-light-grey">Purple</h2>
+</div>
+
+<!-- Rainbow Section -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-64 color" id="Rainbow" style="display:none">
+<h2 class="w3-text-light-grey">Rainbow</h2>
+</div>
+
+</div>
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="photos">
 
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  </div>
 
 
-
-
-  <!-- End Contact Section -->
-  </div>
-
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-
-  <!-- End footer -->
-  </footer>
-
-<!-- END PAGE CONTENT -->
 </div>
 
 </body>
