@@ -3,3 +3,16 @@
     background: red; /* For browsers that do not support gradients */
     background: linear-gradient(to bottom right, red,blue, yellow); /* Standard syntax (must be last) */
 }
+
+
+/* Not able to edit this with normal css because of the odd workings with w3.css. It is not editable becasue of the a
+link. 
+
+ .important{
+  outline-style: solid red !important;
+}
+
+.highlight{
+  outline-style: solid red !important;
+}
+*/

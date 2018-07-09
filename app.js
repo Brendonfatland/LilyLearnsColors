@@ -1,17 +1,13 @@
 $(document).ready(function() {
 
-// Need to get some Javascript or Jquery working that highlights the current tab. 
-  $(".tablinks").click(function(e) {
-          //prevents form from submitting.
-          e.preventDefault();
-
-
-
-          //$(".color").hide();
-          //$(".color").css("color: red");
-      });
-
-
+// Need to get some Javascript or Jquery working that highlights the current tab.
+  /*  $("#NOrange").click(function(e) {
+            //prevents form from submitting.
+            e.preventDefault();
+  $(".").removeClass("important highlight");
+   $("#NOrange").addClass("important highlight");
+        });
+  */
 });
 
 function openColor(selectedColor) {
