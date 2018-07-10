@@ -6,7 +6,7 @@
 
 
 /* Not able to edit this with normal css because of the odd workings with w3.css. It is not editable becasue of the a
-link. 
+link. You are not able to use Div or span either as it produces an odd effect and breaks the w3 workings.  
 
  .important{
   outline-style: solid red !important;
