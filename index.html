@@ -6,7 +6,6 @@
     <title>Lily's Learns Colors</title>
   <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -14,144 +13,129 @@
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
-/* Set the width of the sidebar to 200px */
-/*.w3-sidebar {width: 200px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (200px) */
-/*#main {margin-left: 200px}
-/* Remove margins from "page content" on small screens */
+
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
-<body class="w3-grey">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body class="">
 
 
-<div class="w3-row">
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-col m2">
-  <!-- Avatar image in top left corner -->
-  <img src="elmo.jpg" style="width:100%">
-
-
-  <a href="#Orange" class=" w3-bar-item w3-hover-black w3-button tablinks" id="NOrange" onclick="openColor('Orange')">
-<p class="w3-orange w3-large ">Orange</p>
-</a>
-
-<a href="#Red" class="w3-bar-item w3-margin w3-button  w3-hover-black tablinks" id="NRed" onclick="openColor('Red')">
-<p class="w3-red w3-large ">Red</p>
-</a>
-
-  <a href="#Yellow" class="w3-bar-item w3-margin w3-button  w3-hover-black tablinks" id="NYellow" onclick="openColor('Yellow')">
-<p class="w3-yellow w3-large ">Yellow</p>
-  </a>
-
-  <a href="#Black" class="w3-bar-item w3-margin w3-button  w3-hover-black tablinks" id="NBlack" onclick="openColor('Black')">
-<p class="w3-black w3-large">Black</p>
-  </a>
-
-    <a href="#Brown" class="w3-bar-item w3-margin w3-button  w3-hover-black tablinks" id="NBrown" onclick="openColor('Brown')">
-<p class="w3-brown w3-large">Brown</p>
-    </a>
-
-    <a href="#Blue" class="w3-bar-item w3-margin w3-button  w3-hover-black tablinks" id="NBlue" onclick="openColor('Blue')">
-<p class="w3-blue w3-large">Blue</p>
-    </a>
-
-    <a href="#Green " class="w3-bar-item w3-margin w3-button  w3-hover-black tablinks" id="NGreen" onclick="openColor('Green')">
-<p class="w3-green w3-large">Green</p>
-    </a>
-
-    <a href="#Purple" class="w3-bar-item w3-margin w3-button  w3-hover-black tablinks" id="NPurple" onclick="openColor('Purple')">
-<p class="w3-purple w3-large">Purple</p>
-    </a>
-
-    <a href="#Rainbow" class="w3-bar-item w3-margin w3-button w3-padding-16 w3-hover-black tablinks" id="NRainbow" onclick="openColor('Rainbow')">
-<p class="w3-large" id="NavRainbow">Rainbow</p>
-    </a>
-
+<nav class="navbar navbar-default navbar-fixed-top" id="parent-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="" class="navbar-brand">ILoveLily</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#Orange" class="tablinks" id="NOrange" onclick="openColor('Orange')"><p class="">Orange</p></a>
+        <li><a href="#Red" class="tablinks" id="NRed" onclick="openColor('Red')"><p class="">Red</p></a>
+        <li><a href="#Yellow" class="tablinks" id="NYellow" onclick="openColor('Yellow')"><p class="">Yellow</p></a>
+        <li><a href="#Black" class="tablinks" id="NBlack" onclick="openColor('Black')"><p class="">Black</p></a>
+        <li><a href="#Brown" class=" tablinks" id="NBrown" onclick="openColor('Brown')"><p class="">Brown</p></a>
+        <li><a href="#Blue" class="tablinks" id="NBlue" onclick="openColor('Blue')"><p class="">Blue</p></a>
+        <li><a href="#Green " class="tablinks" id="NGreen" onclick="openColor('Green')"><p class="">Green</p></a>
+        <li><a href="#Purple" class="tablinks" id="NPurple" onclick="openColor('Purple')"><p class="">Purple</p></a>
+        <li><a href="#Rainbow" class="tablinks" id="NRainbow" onclick="openColor('Rainbow')"><p class="" id="NavRainbow">Rainbow</p></a>
+      </ul>
+    </div>
+  </div>
 </nav>
 
+<!-- image of Elmo Ready to go! <img src="elmo.jpg" style="width:100%"> -->
+
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#Elmo" class="w3-bar-item w3-button" style="width:25% !important">Elmo</a>
-    <a href="#Orange" class="w3-bar-item w3-button" style="width:25% !important">Orange</a>
-    <a href="#Red" class="w3-bar-item w3-button" style="width:25% !important">Red</a>
-    <a href="#Yellow" class="w3-bar-item w3-button" style="width:25% !important">Yellow</a>
-    <a href="#Black" class="w3-bar-item w3-button" style="width:25% !important">Black</a>
-    <a href="#Brown" class="w3-bar-item w3-button" style="width:25% !important">Brown</a>
-    <a href="#Blue" class="w3-bar-item w3-button" style="width:25% !important">Blue</a>
-    <a href="#Green" class="w3-bar-item w3-button" style="width:25% !important">Green</a>
-    <a href="#Pruple" class="w3-bar-item w3-button" style="width:25% !important">Purple</a>
-    <a href="#Rainbow" class="w3-bar-item w3-button" style="width:25% !important">Rainbow</a>
+<div class="" id="myNavbar">
+  <div class="">
+    <a href="#Elmo" class="" style="width:25% !important">Elmo</a>
+    <a href="#Orange" class="" style="width:25% !important">Orange</a>
+    <a href="#Red" class="" style="width:25% !important">Red</a>
+    <a href="#Yellow" class="" style="width:25% !important">Yellow</a>
+    <a href="#Black" class="" style="width:25% !important">Black</a>
+    <a href="#Brown" class="" style="width:25% !important">Brown</a>
+    <a href="#Blue" class="" style="width:25% !important">Blue</a>
+    <a href="#Green" class="" style="width:25% !important">Green</a>
+    <a href="#Pruple" class="" style="width:25% !important">Purple</a>
+    <a href="#Rainbow" class="" style="width:25% !important">Rainbow</a>
   </div>
 </div>
 
 
 <!-- Page Content -->
-<div class="w3-padding-large w3-col id="main" style="width:75%">
-  <header class=" w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">Lily Learns Colors</span></h1>
+<div class="" id="main" style="width:75%">
+  <header class=" " id="home">
+    <h1 class=""><span class="">Lily Learns Colors</span></h1>
     <p>I love you Lily! Please always enjoy this!</p>
-    <img src="" alt="boy" class="w3-image" width="992" height="1108">
+    <img src="" alt="boy" class="" width="992" height="1108">
   </header>
 
 <!-- Elmo Section -->
-<div class="w3-content w3-justify w3-text-grey w3-padding-64 color " id="Elmo" style="display:none">
-<h2 class="w3-text-light-grey">Elmo</h2>
+<div class=" color " id="Elmo" style="display:none">
+<h2 class="">Elmo</h2>
 
 </div>
 
 <!-- Red Section -->
-<div class="w3-content w3-justify w3-text-grey w3-padding-64 color" id="Red" style="display:none">
-<h2 class="w3-text-light-grey">Red</h2>
+<div class=" color" id="Red" style="display:none">
+<h2 class="">Red</h2>
 </div>
 
 <!-- Orange Section -->
-<div class="w3-content w3-justify w3-text-grey w3-padding-64 color" id="Orange" style="display:none">
-<h2 class="w3-text-light-grey">Orange</h2>
+<div class="color" id="Orange" style="display:none">
+<h2 class="">Orange</h2>
 </div>
 
 <!-- Yellow Section -->
-<div class="w3-content w3-justify w3-text-grey w3-padding-64 color" id="Yellow" style="display:none">
-<h2 class="w3-text-light-grey">Yellow</h2>
+<div class="color" id="Yellow" style="display:none">
+<h2 class="">Yellow</h2>
 </div>
 
 <!-- Black Section -->
-<div class="w3-content w3-justify w3-text-grey w3-padding-64 color" id="Black" style="display:none">
-<h2 class="w3-text-light-grey">Black</h2>
+<div class=" color" id="Black" style="display:none">
+<h2 class="">Black</h2>
 </div>
 
 <!-- Brown Section -->
-<div class="w3-content w3-justify w3-text-grey w3-padding-64 color" id="Brown" style="display:none">
-<h2 class="w3-text-light-grey">Brown</h2>
+<div class="color" id="Brown" style="display:none">
+<h2 class="">Brown</h2>
 </div>
 
 <!-- Blue Section -->
-<div class="w3-content w3-justify w3-text-grey w3-padding-64 color" id="Blue" style="display:none">
-<h2 class="w3-text-light-grey">Blue</h2>
+<div class="color" id="Blue" style="display:none">
+<h2 class="">Blue</h2>
 </div>
 
 <!-- Green Section -->
-<div class="w3-content w3-justify w3-text-grey w3-padding-64 color" id="Green" style="display:none">
-<h2 class="w3-text-light-grey">Green</h2>
+<div class=" color" id="Green" style="display:none">
+<h2 class="">Green</h2>
 </div>
 
 <!-- Purple Section -->
-<div class="w3-content w3-justify w3-text-grey w3-padding-64 color" id="Purple" style="display:none">
-<h2 class="w3-text-light-grey">Purple</h2>
+<div class=" color" id="Purple" style="display:none">
+<h2 class="">Purple</h2>
 </div>
 
 <!-- Rainbow Section -->
-<div class="w3-content w3-justify w3-text-grey w3-padding-64 color" id="Rainbow" style="display:none">
-<h2 class="w3-text-light-grey">Rainbow</h2>
+<div class=" color" id="Rainbow" style="display:none">
+<h2 class="">Rainbow</h2>
 </div>
 
-</div>
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
 
 
 
 </div>
-
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
