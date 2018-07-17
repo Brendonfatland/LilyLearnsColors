@@ -1,18 +1,91 @@
-#NavRainbow {
+#NRainbow {
 
     background: red; /* For browsers that do not support gradients */
     background: linear-gradient(to bottom right, red,blue, yellow); /* Standard syntax (must be last) */
 }
 
 
-/* Not able to edit this with normal css because of the odd workings with w3.css. It is not editable becasue of the a
-link. You are not able to use Div or span either as it produces an odd effect and breaks the w3 workings.  
-
+ /*Not able to edit this with normal css because of the odd workings with w3.css. It is not editable becasue of the a
+link. You are not able to use Div or span either as it produces an odd effect and breaks the w3 workings.
+font-family: 'Yesteryear', cursive;
+font-family: 'Gaegu', cursive;
+*/
  .important{
   outline-style: solid red !important;
 }
 
 .highlight{
   outline-style: solid red !important;
+
 }
-*/
+
+.navbar-brand{
+  font-family: 'Yesteryear', cursive;
+  font-size: 20px !important;
+}
+#NOrange{
+  background-color: orange !important;
+  color: white;
+  font-family: 'Gaegu', cursive;
+font-size: 35px;
+}
+
+#NRed{
+  background-color: red ;
+  color: white;
+  font-family: 'Gaegu', cursive;
+font-size: 35px;
+}
+#NBlack{
+  background-color: black;
+  color: white;
+  font-family: 'Gaegu', cursive;
+font-size: 35px;
+}
+#NBrown{
+  background-color: brown;
+color: white;
+font-family: 'Gaegu', cursive;
+font-size: 35px;
+}
+#NYellow{
+  background-color: yellow;
+color: grey;
+font-family: 'Gaegu', cursive;
+font-size: 35px;
+}
+#NPurple{
+  background-color: purple;
+color: white;
+font-family: 'Gaegu', cursive;
+font-size: 35px;
+}
+#NGreen{
+  background-color: green;
+color: white;
+font-family: 'Gaegu', cursive;
+font-size: 35px;
+}
+#NBlue{
+  background-color: blue;
+color: white;
+font-family: 'Gaegu', cursive;
+font-size: 35px;
+}
+#NRainbow{
+  color: white;
+  font-family: 'Gaegu', cursive;
+  font-size: 35px;
+}
+
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {
+    background-color: #666;
+    color: white;
+}
+
+.none{
+  color: grey;
+  background-color: orange;
+}
