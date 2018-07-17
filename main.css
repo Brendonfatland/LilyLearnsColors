@@ -11,11 +11,11 @@ font-family: 'Yesteryear', cursive;
 font-family: 'Gaegu', cursive;
 */
  .important{
-  outline-style: solid red !important;
+  border: solid red !important;
 }
 
 .highlight{
-  outline-style: solid red !important;
+  border: solid red !important;
 
 }
 

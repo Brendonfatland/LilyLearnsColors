@@ -1,15 +1,15 @@
 $(document).ready(function() {
 
-// Need to get some Javascript or Jquery working that highlights the current tab.
-/*    $("#NOrange").click(function(e) {
-            //prevents form from submitting.
-            e.preventDefault();
-  $(".").removeClass("important highlight");
-   $("#NOrange").addClass("important highlight");
-        });
-*/
+//REALLY COOL! Removes old border. adds new to what ever .tablinks is clicked... EASY and AWESOME!
+$(".tablinks").click(function(){
+  $(".tablinks").removeClass("important");
+  $(this).addClass("important");
 });
 
+});
+
+//takes all elements with class name color and sets those to display none.
+// Then displays the selected color to block.
 function openColor(selectedColor) {
     var i, x;
 
