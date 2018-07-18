@@ -81,6 +81,15 @@ font-size: 35px;
   font-size: 35px;
 }
 
+.color{
+  border: solid;
+  height: 500px;
+}
+
+img{
+  height: 495px;
+  width: 100%;
+}
 
 /* Style the active class, and buttons on mouse-over */
 .active, .btn:hover {
