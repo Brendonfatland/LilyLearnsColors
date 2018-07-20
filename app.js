@@ -28,4 +28,13 @@ function openColor(selectedColor) {
 
 var audio = new Audio('Orange.mp3'); // define your audio
 
-$('.NOrange').click( audio.play ); // that will do the trick !!
+$('#NOrange').click( function(){
+
+  audio.play();
+}); // that will do the trick !!
+
+function playSound() {
+    $('#OrangeAudio')[0].volume = "0.2" ;
+    $('#OrangeAudio')[0].load();
+    $('#OrangeAudio')[0].play();
+}
